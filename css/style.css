@@ -8,7 +8,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: #fafafa;
     min-height: 100vh;
-    color: #333;
+    color: #2d2d2d;
 }
 
 .container {
@@ -20,7 +20,7 @@ body {
 /* Header - Rose Remedy Pink */
 .site-header {
     background: white;
-    color: #333;
+    color: #2d2d2d;
     padding: 20px 30px;
     border-bottom: 1px solid #FFE5EC;
     position: sticky;
@@ -38,11 +38,11 @@ body {
 
 .site-title {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #FADADD;
+    color: #d4779b;
     letter-spacing: -0.3px;
 }
 
@@ -50,25 +50,25 @@ body {
     display: flex;
     gap: 15px;
     align-items: center;
-    color: #999;
+    color: #666;
     font-size: 14px;
 }
 
 .cart-button {
     background: white;
-    color: #FADADD;
+    color: #d4779b;
     border: 1px solid #FFE5EC;
     padding: 8px 16px;
     border-radius: 6px;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     position: relative;
     transition: all 0.2s ease;
 }
 
 .cart-button:hover {
-    border-color: #FADADD;
+    border-color: #d4779b;
     background: #fafafa;
 }
 
@@ -76,7 +76,7 @@ body {
     position: absolute;
     top: -6px;
     right: -6px;
-    background: #FADADD;
+    background: #d4779b;
     color: white;
     min-width: 18px;
     height: 18px;
@@ -85,15 +85,15 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* Page Title */
 .page-title {
     text-align: center;
-    color: #333;
+    color: #2d2d2d;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 40px 0;
     letter-spacing: -0.5px;
 }
@@ -117,7 +117,7 @@ body {
 }
 
 .album-card:hover {
-    border-color: #FADADD;
+    border-color: #d4779b;
     transform: translateY(-2px);
 }
 
@@ -154,15 +154,15 @@ body {
 }
 
 .album-info h3 {
-    color: #333;
+    color: #2d2d2d;
     font-size: 16px;
     margin-bottom: 6px;
     font-weight: 500;
 }
 
 .album-info p {
-    color: #FADADD;
-    font-weight: 400;
+    color: #d4779b;
+    font-weight: 500;
     font-size: 13px;
 }
 
@@ -184,7 +184,7 @@ body {
 }
 
 .product-card:hover {
-    border-color: #FADADD;
+    border-color: #d4779b;
     transform: translateY(-2px);
 }
 
@@ -224,7 +224,7 @@ body {
     top: 30px;
     right: 40px;
     font-size: 32px;
-    color: #999;
+    color: #666;
     cursor: pointer;
     z-index: 10001;
     width: 40px;
@@ -237,7 +237,7 @@ body {
 }
 
 .lightbox-close:hover {
-    color: #FADADD;
+    color: #2d2d2d;
     background: #FFE5EC;
 }
 
@@ -247,7 +247,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     background: white;
-    color: #999;
+    color: #666;
     border: 1px solid #FFE5EC;
     font-size: 24px;
     padding: 16px 12px;
@@ -259,8 +259,8 @@ body {
 
 .lightbox-prev:hover,
 .lightbox-next:hover {
-    color: #FADADD;
-    border-color: #FADADD;
+    color: #2d2d2d;
+    border-color: #d4779b;
 }
 
 .lightbox-prev {
@@ -294,7 +294,7 @@ body {
 
 .lightbox-info h3 {
     font-size: 20px;
-    color: #333;
+    color: #2d2d2d;
     margin-bottom: 12px;
     font-weight: 500;
 }
@@ -307,12 +307,12 @@ body {
 
 .lightbox-price {
     font-size: 24px;
-    color: #FADADD;
-    font-weight: 500;
+    color: #d4779b;
+    font-weight: 600;
 }
 
 .lightbox-stock {
-    color: #999;
+    color: #666;
     margin-top: 4px;
     font-size: 13px;
 }
@@ -323,7 +323,7 @@ body {
     border: none;
     border-radius: 6px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
     text-decoration: none;
@@ -331,18 +331,18 @@ body {
 }
 
 .btn-primary {
-    background: #FADADD;
+    background: #d4779b;
     color: white;
-    border: 1px solid #FADADD;
+    border: 1px solid #d4779b;
 }
 
 .btn-primary:hover {
-    background: #f7c5c8;
+    background: #c2648a;
 }
 
 .btn-secondary {
     background: #FFE5EC;
-    color: #333;
+    color: #2d2d2d;
     border: 1px solid #FFE5EC;
 }
 
@@ -352,7 +352,7 @@ body {
 
 .btn-tertiary {
     background: #E2F0CB;
-    color: #333;
+    color: #2d2d2d;
     border: 1px solid #E2F0CB;
 }
 
@@ -362,7 +362,7 @@ body {
 
 .btn-quaternary {
     background: #C9E4DE;
-    color: #333;
+    color: #2d2d2d;
     border: 1px solid #C9E4DE;
 }
 
@@ -392,11 +392,11 @@ body {
 }
 
 .stat-card:hover {
-    border-color: #FADADD;
+    border-color: #d4779b;
 }
 
 .stat-card.pink {
-    border-top: 2px solid #FADADD;
+    border-top: 2px solid #d4779b;
 }
 
 .stat-card.rose {
@@ -409,13 +409,13 @@ body {
 
 .stat-number {
     font-size: 36px;
-    font-weight: 400;
-    color: #333;
+    font-weight: 600;
+    color: #2d2d2d;
     margin-bottom: 8px;
 }
 
 .stat-label {
-    color: #999;
+    color: #666;
     font-size: 14px;
     font-weight: 400;
 }
@@ -435,8 +435,8 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: #666;
-    font-weight: 400;
+    color: #2d2d2d;
+    font-weight: 500;
     font-size: 13px;
 }
 
@@ -451,13 +451,14 @@ body {
     transition: all 0.2s ease;
     background: white;
     font-family: inherit;
+    color: #2d2d2d;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #FADADD;
+    border-color: #d4779b;
 }
 
 .form-row {
@@ -469,7 +470,7 @@ body {
 .form-group small {
     display: block;
     margin-top: 6px;
-    color: #999;
+    color: #666;
     font-size: 12px;
 }
 
@@ -480,27 +481,31 @@ body {
     border: 1px solid #FFE5EC;
 }
 
+.upload-form h2 {
+    color: #2d2d2d;
+}
+
 /* Messages */
 .success-message,
 .error-message {
     padding: 12px 16px;
     border-radius: 6px;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 13px;
     border: 1px solid;
 }
 
 .success-message {
     background: #E2F0CB;
-    color: #4a5d2e;
+    color: #3d5221;
     border-color: #d5e8b8;
 }
 
 .error-message {
     background: #FFE5EC;
-    color: #c94b5b;
-    border-color: #FADADD;
+    color: #b83857;
+    border-color: #d4779b;
 }
 
 /* Cart Page */
@@ -515,7 +520,11 @@ body {
 .cart-empty {
     text-align: center;
     padding: 80px 20px;
-    color: #999;
+    color: #666;
+}
+
+.cart-empty h2 {
+    color: #2d2d2d;
 }
 
 .cart-empty-icon {
@@ -557,7 +566,7 @@ body {
 }
 
 .cart-item-details h3 {
-    color: #333;
+    color: #2d2d2d;
     margin-bottom: 6px;
     font-weight: 500;
     font-size: 15px;
@@ -565,8 +574,8 @@ body {
 
 .cart-item-price {
     font-size: 18px;
-    color: #FADADD;
-    font-weight: 500;
+    color: #d4779b;
+    font-weight: 600;
 }
 
 .cart-item-actions {
@@ -590,41 +599,41 @@ body {
     height: 24px;
     border: none;
     background: white;
-    color: #FADADD;
+    color: #d4779b;
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 500;
     transition: all 0.2s ease;
 }
 
 .quantity-btn:hover {
-    background: #FADADD;
+    background: #d4779b;
     color: white;
 }
 
 .quantity-display {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     min-width: 24px;
     text-align: center;
-    color: #333;
+    color: #2d2d2d;
 }
 
 .remove-btn {
     background: #FFE5EC;
-    color: #FADADD;
+    color: #d4779b;
     border: 1px solid #FFE5EC;
     padding: 6px 12px;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.2s ease;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
 }
 
 .remove-btn:hover {
-    background: #FADADD;
+    background: #d4779b;
     color: white;
 }
 
@@ -640,14 +649,14 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    font-weight: 400;
-    color: #333;
+    font-weight: 500;
+    color: #2d2d2d;
     margin-bottom: 20px;
 }
 
 .cart-total-amount {
-    color: #FADADD;
-    font-weight: 500;
+    color: #d4779b;
+    font-weight: 600;
 }
 
 /* Checkout Page */
@@ -661,6 +670,10 @@ body {
     border-radius: 8px;
     padding: 32px;
     border: 1px solid #FFE5EC;
+}
+
+.checkout-form h2 {
+    color: #2d2d2d;
 }
 
 .payment-methods {
@@ -681,19 +694,27 @@ body {
     background: white;
 }
 
+.payment-option strong {
+    color: #2d2d2d;
+}
+
+.payment-option p {
+    color: #666;
+}
+
 .payment-option:hover {
-    border-color: #FADADD;
+    border-color: #d4779b;
     background: #FFE5EC;
 }
 
 .payment-option input[type="radio"] {
     width: 16px;
     height: 16px;
-    accent-color: #FADADD;
+    accent-color: #d4779b;
 }
 
 .payment-option.selected {
-    border-color: #FADADD;
+    border-color: #d4779b;
     background: #FFE5EC;
 }
 
@@ -705,7 +726,7 @@ body {
 }
 
 .payment-details h4 {
-    color: #333;
+    color: #2d2d2d;
     margin-bottom: 12px;
     font-weight: 500;
     font-size: 15px;
@@ -721,8 +742,13 @@ body {
 
 .payment-info p {
     margin: 6px 0;
-    color: #666;
+    color: #2d2d2d;
     font-size: 13px;
+}
+
+.payment-info p strong {
+    color: #2d2d2d;
+    font-weight: 600;
 }
 
 .qr-code {
@@ -744,6 +770,10 @@ body {
     margin-top: 40px;
 }
 
+.orders-list h2 {
+    color: #2d2d2d;
+}
+
 .order-card {
     display: flex;
     justify-content: space-between;
@@ -761,33 +791,39 @@ body {
     gap: 16px;
     align-items: center;
     font-size: 14px;
+    color: #2d2d2d;
+}
+
+.order-info strong {
+    color: #2d2d2d;
+    font-weight: 600;
 }
 
 .order-status {
     padding: 6px 14px;
     border-radius: 6px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
 }
 
 .status-pending {
     background: #E2F0CB;
-    color: #5a6e3d;
+    color: #3d5221;
 }
 
 .status-paid {
     background: #C9E4DE;
-    color: #3d6e62;
+    color: #2d5751;
 }
 
 .status-completed {
     background: #FFE5EC;
-    color: #c94b5b;
+    color: #b83857;
 }
 
 .status-cancelled {
     background: #f5f5f5;
-    color: #999;
+    color: #666;
 }
 
 /* Login Page */
@@ -815,13 +851,13 @@ body {
 
 .login-box h1 {
     font-size: 24px;
-    color: #FADADD;
+    color: #d4779b;
     margin-bottom: 6px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .login-box h2 {
-    color: #999;
+    color: #666;
     margin-bottom: 28px;
     font-weight: 400;
     font-size: 15px;
@@ -830,15 +866,15 @@ body {
 .back-link {
     display: inline-block;
     margin-top: 16px;
-    color: #FADADD;
+    color: #d4779b;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
     transition: all 0.2s ease;
     font-size: 13px;
 }
 
 .back-link:hover {
-    color: #f7c5c8;
+    color: #c2648a;
 }
 
 /* Responsive Design */
