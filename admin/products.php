@@ -34,32 +34,31 @@ if ($album_filter > 0) {
         <h1 class="page-title">🖼️ Manage Products</h1>
         
         <!-- Filter -->
-        <div class="upload-form" style="margin-bottom: 30px;">
-            <form method="GET" action="">
-                <div class="form-row">
-                    <div class="form-group" style="flex: 1;">
-                        <select name="album" onchange="this.form.submit()">
-                            <option value="0">All Albums</option>
-                            <?php 
-                            $albums->data_seek(0);
-                            while ($album = $albums->fetch_assoc()): 
-                            ?>
-                                <option value="<?php echo $album['id']; ?>" <?php echo $album_filter == $album['id'] ? 'selected' : ''; ?>>
-                                    <?php echo $album['name']; ?>
-                                </option>
-                            <?php endwhile; ?>
-                        </select>
-                    </div>
-                </div>
-            </form>
+<div class="filter-dropdown-container">
+    <form method="GET" action="" style="width: 100%; display: flex; justify-content: center;">
+        <div class="form-group" style="max-width: 400px; width: 100%; margin-bottom: 0;">
+            <select name="album" onchange="this.form.submit()">
+                <option value="0">📁 All Albums</option>
+                <?php 
+                $albums->data_seek(0);
+                while ($album = $albums->fetch_assoc()): 
+                ?>
+                    <option value="<?php echo $album['id']; ?>" <?php echo $album_filter == $album['id'] ? 'selected' : ''; ?>>
+                        <?php echo $album['name']; ?>
+                    </option>
+                <?php endwhile; ?>
+            </select>
         </div>
-        
-        <!-- Products Grid -->
-        <?php if ($products->num_rows === 0): ?>
-            <div class="orders-list">
-                <p style="text-align: center; color: #666; padding: 40px;">No products found. Upload some products!</p>
-            </div>
-        <?php else: ?>
+    </form>
+</div>
+
+<!-- Products Grid -->
+<?php if ($products->num_rows === 0): ?>
+    <div class="empty-state-box">
+        <div class="empty-state-icon">🖼️</div>
+        <p>No products found. Upload some products!</p>
+    </div>
+<?php else: ?>
             <div class="products-grid">
                 <?php while ($product = $products->fetch_assoc()): ?>
                     <div class="product-card" style="cursor: default;">

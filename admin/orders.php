@@ -34,28 +34,27 @@ if ($status_filter !== 'all') {
         <?php endif; ?>
         
         <!-- Filter -->
-        <div class="upload-form" style="margin-bottom: 30px;">
-            <form method="GET" action="">
-                <div class="form-row">
-                    <div class="form-group" style="flex: 1;">
-                        <select name="status" onchange="this.form.submit()">
-                            <option value="all" <?php echo $status_filter === 'all' ? 'selected' : ''; ?>>All Orders</option>
-                            <option value="pending" <?php echo $status_filter === 'pending' ? 'selected' : ''; ?>>Pending</option>
-                            <option value="paid" <?php echo $status_filter === 'paid' ? 'selected' : ''; ?>>Paid</option>
-                            <option value="completed" <?php echo $status_filter === 'completed' ? 'selected' : ''; ?>>Completed</option>
-                            <option value="cancelled" <?php echo $status_filter === 'cancelled' ? 'selected' : ''; ?>>Cancelled</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
+<div class="filter-dropdown-container">
+    <form method="GET" action="" style="width: 100%; display: flex; justify-content: center;">
+        <div class="form-group" style="max-width: 400px; width: 100%; margin-bottom: 0;">
+            <select name="status" onchange="this.form.submit()">
+                <option value="all" <?php echo $status_filter === 'all' ? 'selected' : ''; ?>>📋 All Orders</option>
+                <option value="pending" <?php echo $status_filter === 'pending' ? 'selected' : ''; ?>>⏳ Pending</option>
+                <option value="paid" <?php echo $status_filter === 'paid' ? 'selected' : ''; ?>>💰 Paid</option>
+                <option value="completed" <?php echo $status_filter === 'completed' ? 'selected' : ''; ?>>✅ Completed</option>
+                <option value="cancelled" <?php echo $status_filter === 'cancelled' ? 'selected' : ''; ?>>❌ Cancelled</option>
+            </select>
         </div>
-        
-        <!-- Orders List -->
-        <?php if ($orders->num_rows === 0): ?>
-            <div class="orders-list">
-                <p style="text-align: center; color: #666; padding: 40px;">No orders found.</p>
-            </div>
-        <?php else: ?>
+    </form>
+</div>
+
+<!-- Orders List -->
+<?php if ($orders->num_rows === 0): ?>
+    <div class="empty-state-box">
+        <div class="empty-state-icon">📦</div>
+        <p>No orders found.</p>
+    </div>
+<?php else: ?>
             <div style="display: grid; gap: 20px;">
                 <?php while ($order = $orders->fetch_assoc()): ?>
                     <div style="background: white; border-radius: 20px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">

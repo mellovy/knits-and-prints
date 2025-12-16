@@ -940,3 +940,70 @@ body {
         padding: 32px 24px;
     }
 }
+
+/* Better Filter Dropdown Styling */
+.filter-dropdown-container {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    border: 1px solid #FFE5EC;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-dropdown-container .form-group {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.filter-dropdown-container select {
+    width: 100%;
+    padding: 12px 40px 12px 16px;
+    border: 1px solid #FFE5EC;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    background: white;
+    font-family: inherit;
+    color: #2d2d2d;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='%23d4779b' d='M7 10L2 5h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    font-weight: 500;
+}
+
+.filter-dropdown-container select:hover {
+    border-color: #d4779b;
+    background-color: #fafafa;
+}
+
+.filter-dropdown-container select:focus {
+    outline: none;
+    border-color: #d4779b;
+    box-shadow: 0 0 0 3px rgba(212, 119, 155, 0.1);
+}
+
+/* Better Empty State */
+.empty-state-box {
+    background: white;
+    border-radius: 8px;
+    padding: 80px 40px;
+    border: 1px solid #FFE5EC;
+    text-align: center;
+}
+
+.empty-state-box p {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+}
+
+.empty-state-icon {
+    font-size: 64px;
+    margin-bottom: 16px;
+    opacity: 0.4;
+}
